@@ -1,13 +1,18 @@
 import './App.css';
+import About from './Components/About/About';
 import Header from './Components/Header/Header';
-import Home from './Pages/Home/Home';
+import Home from './Components/Home/Home';
+import Skills from './Components/Skills/Skills';
+
 
 function App() {
   return (
     <>
     <Header/>
     <main className='main'>
-      <Home/>
+     <Home/>
+     <About/>
+     <Skills/>
     </main>
     </>
   );
