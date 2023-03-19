@@ -55,9 +55,9 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Full-Stack Developer</h3>
+      <h3 className="home__subtitle">Web Developer</h3>
       <p className="home__description">
-        Mình tên thật là Thái Phạm Ngọc Tường. Mình có một niềm đam mê bất với việc gõ code.
+        Một sản phẩm tốt là một sản phẩm tiện. Tiện cho người tạo ra, tiện cho người vận hành, và tiện cho người sử dụng.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
