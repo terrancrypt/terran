@@ -1,13 +1,28 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { validateEmail } from "./Validate";
 
 const Contact = () => {
   const form = useRef();
 
+  const sendingEmail = () => {
+    //Validate
+    let isValid = true;
+    let email = document.querySelector(".contact__form-email").value;
+    let name = document.querySelector(".contact__form-name").value;
+    let message = document.querySelector(".contact__form-message").value;
+    
+    isValid = validateEmail(email);
+
+    if(isValid){
+    sendEmail();
+    } 
+
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_icv6v9q",
@@ -26,6 +41,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <section className="contact section" id="contact">
       <div className="section__title">Get in touch</div>
@@ -86,13 +102,13 @@ const Contact = () => {
         <div className="contact__content">
           <div className="contact__title">Write me your projects</div>
 
-          <form ref={form} onSubmit={sendEmail} className="contact__form">
+          <form ref={form} onSubmit={sendingEmail} className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Email</label>
               <input
                 type="email"
                 name="email"
-                className="contact__form-input"
+                className="contact__form-input contact__form-email"
                 placeholder="Insert your email"
               />
             </div>
@@ -101,22 +117,27 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                className="contact__form-input"
+                className="contact__form-input contact__form-name"
                 placeholder="Insert your name"
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+              <label className="contact__form-tag">Message</label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
-                className="contact__form-input"
+                className="contact__form-input contact__form-message"
                 placeholder="Write your project"
               />
             </div>
 
-            <button className="button button--flex">
+            <button
+              // onClick={() => {
+              //   sendingEmail()
+              // }}
+              className="button button--flex"
+            >
               Send Message
               <svg
                 class="button__icon"

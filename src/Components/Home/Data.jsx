@@ -57,10 +57,13 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
       <p className="home__description">
-        Một sản phẩm tốt là một sản phẩm tiện. Tiện cho người tạo ra, tiện cho người vận hành, và tiện cho người sử dụng.
+        Một sản phẩm tốt là một sản phẩm tiện.
+        <br />
+        Tiện cho người tạo ra, tiện cho người vận hành, và tiện cho người sử
+        dụng.
       </p>
-      <a href="#contact" className="button button--flex">
-        Say Hello
+      <a href="#project" className="button button--flex">
+       See My Work
         <svg
           class="button__icon"
           xmlns="http://www.w3.org/2000/svg"
