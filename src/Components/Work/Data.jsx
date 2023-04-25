@@ -1,45 +1,52 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import NhaKhoaMatTroi from "../../assets/nhakhoamattroi-screenshot.png";
+import TerranPortfolio from "../../assets/terranportfolio.png";
+import HilightCinema from "../../assets/HilightCinema-Screenshot.png";
+import Fiverr from "../../assets/Fiverr_Screenshot.png";
 
-export const projectsData = [
+export const Data = [
   {
     id: 1,
-    image: Work1,
-    title: "Web design",
-    category: "web",
+    image: NhaKhoaMatTroi,
+    title: "Nha Khoa Mặt Trời Website",
+    category: "Wordpress",
+    link: "https://nhakhoamattroi.com/",
+    github: false,
   },
   {
     id: 2,
-    image: Work2,
-    title: "App movil",
-    category: "app",
+    image: TerranPortfolio,
+    title: "Portfolio Website",
+    category: "Front-End",
+    link: "/",
+    github: true,
+    gitlink: "https://github.com/terrancrypt/terran",
   },
   {
     id: 3,
-    image: Work3,
-    title: "Brand design",
-    category: "design",
+    image: HilightCinema,
+    title: "Hilight Cinema",
+    category: "Front-End",
+    link: "https://hilight-cinema.vercel.app/",
+    github: true,
+    gitlink: "https://github.com/terrancrypt/Hilight_Cinema/",
   },
   {
     id: 4,
-    image: Work4,
-    title: "App movil",
-    category: "app",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "Web design",
-    category: "web",
+    image: Fiverr,
+    title: "Fiverr Clone",
+    category: "Front-End",
+    link: "https://bc-40-fiverr-clone-capstone-project.vercel.app/",
+    github: true,
+    gitlink:
+      "https://github.com/terrancrypt/bc_40_fiverr_clone_capstone_project",
   },
 ];
 
+export const projectsData = Data.reverse();
+
 export const projectNav = [
   { name: "all" },
-  { name: "web" },
-  { name: "app" },
-  { name: "design" },
+  { name: "Front-End" },
+  // { name: "Full-Stack" },
+  { name: "Wordpress" },
 ];

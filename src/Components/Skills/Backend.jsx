@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 
 const Backend = () => { 
     const [skillArr, setArr] = useState([
-        { icon: <i class='bx bxl-php' ></i>, skillName: "PHP" },
-        { icon: <i class='bx bxl-nodejs' ></i>, skillName: "NodeJS" },
-        { icon: <i class='bx bx-data' ></i>, skillName: "MySQL" },
-        { icon: <i class='bx bxl-python' ></i>, skillName: "Python" },
+        { icon: <i className='bx bxl-php' ></i>, skillName: "PHP" },
+        { icon: <i className='bx bxl-nodejs' ></i>, skillName: "NodeJS" },
+        { icon: <i className='bx bx-data' ></i>, skillName: "MySQL" },
+        { icon: <i className='bx bxl-python' ></i>, skillName: "Python" },
       ]);
 
       let renderSkills = () => {
-        return skillArr.map((skill) => {
+        return skillArr.map((skill, index) => {
           return (
-            <div className="skills__data">
+            <div className="skills__data" key={index}>
               {skill.icon}
               <div>
                 <h3 className="skills__name">{skill.skillName}</h3>

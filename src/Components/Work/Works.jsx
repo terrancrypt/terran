@@ -11,7 +11,7 @@ const Works = () => {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (item.name == "all") {
+    if (item.name === "all") {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {

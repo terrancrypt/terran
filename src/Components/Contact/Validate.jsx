@@ -1,3 +1,5 @@
+import { message } from "antd";
+
 export const validateEmail = (value) => {
   const reg =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -5,7 +7,7 @@ export const validateEmail = (value) => {
   if (isEmail) {
     return true;
   } else {
-    console.log("Error");
+    message.error("Email không hợp lệ!")
     return false;
   }
 };

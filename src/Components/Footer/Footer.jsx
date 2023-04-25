@@ -20,17 +20,17 @@ const Footer = () => {
         </ul>
 
         <div className="footer__social">
-          <a href="#" className="footer__social-link" target="_blank">
-            <i class="bx bxl-facebook"></i>
+          <a href="https://www.facebook.com/terrancrypt/" className="footer__social-link" target="_blank">
+            <i className="bx bxl-facebook"></i>
           </a>
 
-          <a href="#" className="footer__social-link" target="_blank">
-            <i class="bx bxl-instagram"></i>
+          <a href="https://www.instagram.com/ngoctuonggg/" className="footer__social-link" target="_blank">
+            <i className="bx bxl-instagram"></i>
           </a>
 
-          <a href="#" className="footer__social-link" target="_blank">
-            <i class="bx bxl-twitter"></i>
-          </a>
+          {/* <a href="#" className="footer__social-link" target="_blank">
+            <i className="bx bxl-twitter"></i>
+          </a> */}
         </div>
 
         <span className="footer__copy">&#169; Terrancypt. All rights reserved</span>

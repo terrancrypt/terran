@@ -32,7 +32,7 @@ const ScrollDown = () => {
           />
         </svg>
         <span className="home__scroll-name">Scroll Down</span>
-        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        <i className="uil uil-arrow-down home__scroll-arrow"></i>
       </a>
     </div>
   );
