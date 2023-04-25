@@ -47,6 +47,11 @@
     line-height: 18px;
 }
 
+.skill__icons{
+    width: 20px;
+    height: 20px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
