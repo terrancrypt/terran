@@ -2,6 +2,7 @@ import NhaKhoaMatTroi from "../../assets/nhakhoamattroi-screenshot.png";
 import TerranPortfolio from "../../assets/terranportfolio.png";
 import HilightCinema from "../../assets/HilightCinema-Screenshot.png";
 import Fiverr from "../../assets/Fiverr_Screenshot.png";
+import ShoeStore from "../../assets/shoe-store-shot.png";
 
 export const Data = [
   {
@@ -40,6 +41,16 @@ export const Data = [
     gitlink:
       "https://github.com/terrancrypt/bc_40_fiverr_clone_capstone_project",
   },
+  {
+    id: 5,
+    image: ShoeStore,
+    title: "Shoe Store",
+    category: "Full-Stack",
+    link: "https://fullstack-nextjs-nodejs-ecommerce.vercel.app/",
+    github: true,
+    gitlink:
+      "https://github.com/terrancrypt/fullstack_nextjs_nodejs_ecommerce",
+  },
 ];
 
 export const projectsData = Data.reverse();
@@ -47,6 +58,6 @@ export const projectsData = Data.reverse();
 export const projectNav = [
   { name: "all" },
   { name: "Front-End" },
-  // { name: "Full-Stack" },
+  { name: "Full-Stack" },
   { name: "Wordpress" },
 ];
