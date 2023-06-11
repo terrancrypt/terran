@@ -5,6 +5,7 @@ import Fiverr from "../../assets/Fiverr_Screenshot.png";
 import ShoeStore from "../../assets/shoe-store-shot.png";
 import Carhub from "../../assets/Carhub.png";
 import YoutubeClone from "../../assets/Youtube_clone.png"
+import NextBlog from "../../assets/NextBlog.png"
 
 export const Data = [
   {
@@ -72,6 +73,16 @@ export const Data = [
     github: true,
     gitlink:
       "https://github.com/terrancrypt/carhub",
+  },
+  {
+    id: 8,
+    image: NextBlog,
+    title: "Next Blog",
+    category: "Full-Stack",
+    link: "https://nextblog-flax.vercel.app/",
+    github: true,
+    gitlink:
+      "https://github.com/terrancrypt/nextblog",
   },
 ];
 
