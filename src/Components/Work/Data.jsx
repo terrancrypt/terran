@@ -3,6 +3,8 @@ import TerranPortfolio from "../../assets/terranportfolio.png";
 import HilightCinema from "../../assets/HilightCinema-Screenshot.png";
 import Fiverr from "../../assets/Fiverr_Screenshot.png";
 import ShoeStore from "../../assets/shoe-store-shot.png";
+import Carhub from "../../assets/Carhub.png";
+import YoutubeClone from "../../assets/Youtube_clone.png"
 
 export const Data = [
   {
@@ -50,6 +52,26 @@ export const Data = [
     github: true,
     gitlink:
       "https://github.com/terrancrypt/fullstack_nextjs_nodejs_ecommerce",
+  },
+  {
+    id: 6,
+    image: YoutubeClone,
+    title: "Youtube 2.0",
+    category: "Front-End",
+    link: "https://youtube-clone-mu-hazel.vercel.app/",
+    github: true,
+    gitlink:
+      "https://github.com/terrancrypt/youtube_clone",
+  },
+  {
+    id: 7,
+    image: Carhub,
+    title: "Carhub",
+    category: "Front-End",
+    link: "https://carhub-wine.vercel.app/",
+    github: true,
+    gitlink:
+      "https://github.com/terrancrypt/carhub",
   },
 ];
 
