@@ -1,9 +1,9 @@
-import React from "react";
+import Carousel from "@/components/HomePage/Carousel";
 import { ConfigProvider } from "antd";
 
 const HomePage = () => (
   <ConfigProvider>
-    <div className="App">Homepage</div>
+    <Carousel />
   </ConfigProvider>
 );
 

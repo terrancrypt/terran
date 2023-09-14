@@ -1,6 +1,6 @@
-import { M_PLUS_1p, Quicksand } from "next/font/google";
+import { Livvic } from "next/font/google";
 
-export const quicksand = Quicksand({
+export const mainFont = Livvic({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "900"],
 });
