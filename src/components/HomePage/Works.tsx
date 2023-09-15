@@ -4,13 +4,12 @@ import containerConfig from "@/theme/containerClassConfig";
 import React, { useEffect } from "react";
 import ReactIcon from "../Icons/ReactIcon";
 import TypeScriptIcon from "../Icons/TypeScriptIcon";
-import NextJsIcon from "../Icons/NextJsIcon";
 import JavaScriptIcon from "../Icons/JavaScriptIcon";
-import NodeJsIcon from "../Icons/NodeJSIcon";
 import NestJsIcon from "../Icons/NestJsIcon";
 import SolidityIcon from "../Icons/SolidityIcon";
+import NextJsIcon from "../Icons/NextJsIcon";
+import NodeJsIcon from "../Icons/NodeJsIcon";
 import Image from "next/image";
-import DockerIcon from "../Icons/DockerIcon";
 
 const Works = () => {
   const dataSkills = [
