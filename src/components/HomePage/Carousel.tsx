@@ -1,29 +1,35 @@
 import Image from "next/image";
 import avtImage from "public/images/avatar.jpg";
-import { mainFont } from "@/app/fonts";
 import { MinusSmallIcon } from "@heroicons/react/24/outline";
+import SocialIcons from "../SocialIcons/SocialIcons";
+import containerConfig from "@/theme/containerClassConfig";
 
 const Carousel = () => {
   return (
-    <section className="h-screen flex items-center justify-center">
-      <div className="">
-        <div>
+    <section
+      className={`h-[75vh] flex items-center justify-center ${containerConfig}`}
+    >
+      <div className="flex flex-col items-center">
+        <div className="flex items-center gap-4 mb-[64px]">
           <Image
             src={avtImage}
             width={80}
             height={80}
             alt="terran crypt avatar"
+            className="rounded-full"
           />
-          <span>Thai Pham Ngoc Tuong</span>
+          <span className="md:text-xl font-medium">Thai Pham Ngoc Tuong</span>
         </div>
-        <div>
-          A good product is a convenient product. Convenient for the creator,
-          convenient for the operator, and convenient for the user.
+        <div className="font-medium text-[20px] sm:text-[30px] lg:text-[40px] text-center">
+          A good product is a convenient product.
+          <br />
+          Convenient for the creator, convenient for the operator, and
+          convenient for the user.
         </div>
-        <div>
-          <span>follow me</span>
+        <div className="mt-[64px] flex justify-center items-center gap-2">
+          <span className="font-semibold text-sm">FOLLOW ME</span>
           <MinusSmallIcon className="w-5 h-5" />
-          <div></div>
+          <SocialIcons />
         </div>
       </div>
     </section>

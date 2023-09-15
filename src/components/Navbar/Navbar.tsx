@@ -59,7 +59,10 @@ const Navbar = () => {
             </a>
           </nav>
         </div>
-        <div className="flex-grow h-full bg-[#ffffff] opacity-50"></div>
+        <div
+          className="flex-grow h-full bg-[#ffffff] opacity-50"
+          onClick={() => dispatch(toggleNavbar())}
+        ></div>
       </div>
     </div>
   );

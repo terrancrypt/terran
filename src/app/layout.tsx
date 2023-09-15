@@ -16,7 +16,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body
       className={
-        "container mx-auto text-[#454545] bg-white dark:text-[#ffffff] dark:bg-[#1c1c1c] xl:px-0 lg:px-2 md:px-4 px-6"
+        "text-[#454545] bg-white dark:text-[#ffffff] dark:bg-[#1c1c1c] "
       }
     >
       <ReduxToolkitProviders>

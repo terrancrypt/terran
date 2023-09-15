@@ -22,7 +22,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className=" fixed top-0 left-0 w-full  xl:px-0 lg:px-2 md:px-4 px-6">
+    <div className="fixed top-0 left-0 w-full xl:px-0 lg:px-2 md:px-4 px-6">
       <div
         className={`py-[25px] flex justify-between items-center ${mainFont.className} tracking-wider container mx-auto`}
       >
