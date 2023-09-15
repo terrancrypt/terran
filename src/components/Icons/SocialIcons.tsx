@@ -8,7 +8,7 @@ import {
 
 const SocialIcons = () => {
   return (
-    <div className={`space-x-3 text-lg`}>
+    <div className={`space-x-3 text-lg `}>
       <GithubOutlined />
       <LinkedinOutlined />
       <FacebookOutlined />

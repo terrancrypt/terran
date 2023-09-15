@@ -30,14 +30,14 @@ const Header = () => {
           <EllipsisVerticalIcon className="w-8 h-8 " />
         </button>
         <Link href="/">
-          <Image
-            className="object-cover"
+          {/* <Image
             src={theme === "light" ? logoLight : logoDark}
             alt="terran crypt logo"
             width={150}
             height={50}
-            layout="resposive"
-          />
+            priority
+          /> */}
+          <span>TerranCrypt</span>
         </Link>
         <nav className="space-x-8 uppercase text-[13px] font-semibold hidden md:flex">
           <a

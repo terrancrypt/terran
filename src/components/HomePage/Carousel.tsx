@@ -1,7 +1,7 @@
 import Image from "next/image";
 import avtImage from "public/images/avatar.jpg";
 import { MinusSmallIcon } from "@heroicons/react/24/outline";
-import SocialIcons from "../SocialIcons/SocialIcons";
+import SocialIcons from "../Icons/SocialIcons";
 import containerConfig from "@/theme/containerClassConfig";
 
 const Carousel = () => {
