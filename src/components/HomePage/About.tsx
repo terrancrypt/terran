@@ -11,7 +11,7 @@ import NextJsIcon from "../Icons/NextJsIcon";
 import NodeJsIcon from "../Icons/NodeJsIcon";
 import Image from "next/image";
 
-const Works = () => {
+const About = () => {
   const dataSkills = [
     {
       icon: <JavaScriptIcon />,
@@ -37,10 +37,6 @@ const Works = () => {
       icon: <NestJsIcon />,
       name: "NestJS",
     },
-    // {
-    //   icon: <DockerIcon />,
-    //   name: "Docker",
-    // },
     {
       icon: <SolidityIcon />,
       name: "Solidity",
@@ -110,7 +106,7 @@ const Works = () => {
           </div>
         </div>
         <hr className="py-10" />
-        <div className="grid grid-cols-2 md:grid-cols-4 text-white pb-14 gap-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 text-white pb-20 gap-14">
           {dataSkills.map((item, index) => (
             <div key={index} className="flex justify-center">
               <div className="text-center flex flex-col items-center">
@@ -127,4 +123,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default About;
