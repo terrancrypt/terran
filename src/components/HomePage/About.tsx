@@ -88,7 +88,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-[#141414] py-6 lg:py-0">
+    <section className="bg-[#141414] py-6 lg:py-0" id="about">
       <div className={`${containerConfig}`}>
         <div className="h-[25vh] flex items-center justify-beetween">
           <div className="space-y-3 lg:space-y-0 lg:flex items-center justify-between w-full">
@@ -98,7 +98,7 @@ const About = () => {
             {/* <button className="bg-white p-4 rounded-3xl font-medium hover:scale-90 transition-all">
             See my work
           </button> */}
-            <p className="text-white w-full lg:w-[600px] text-base md:text-xl lg:text-2xl font-medium">
+            <p className="text-white w-full lg:w-[600px] text-base md:text-lg lg:text-xl ">
               I&apos;m a versatile programmer with front-end, back-end, and
               smart contract development skills. I have a passion for Web3 and
               Blockchain development.

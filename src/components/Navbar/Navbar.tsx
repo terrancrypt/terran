@@ -18,7 +18,7 @@ const Navbar = () => {
     <div
       className={`${
         isOpen ? "translate-x-[70vw] sm:translate-x-[300px] w-full" : ""
-      } fixed top-0 -left-[70vw] sm:-left-[300px] h-full z-50 transition-transform`}
+      } fixed top-0 -left-[70vw] sm:-left-[300px] h-full z-[60] transition-transform`}
     >
       <div className="w-full h-full flex">
         <div className="w-[70vw] sm:w-[300px] h-full bg-[#f8f8f8] dark:bg-[#1c1c1c] relative p-8">
@@ -31,28 +31,32 @@ const Navbar = () => {
           <nav className="space-y-6 uppercase text-[13px] font-semibold flex flex-col pt-14">
             <a
               className="dark:hover:text-[#a1a1a1] transition-all flex gap-2 items-center"
-              href=""
+              href="/#about"
+              onClick={() => dispatch(toggleNavbar())}
             >
               <UserIcon className="w-4 h-4" />
               About
             </a>
             <a
               className="dark:hover:text-[#a1a1a1] transition-all flex gap-2 items-center"
-              href=""
-            >
-              <BriefcaseIcon className="w-4 h-4" />
-              Work
-            </a>
-            <a
-              className="dark:hover:text-[#a1a1a1] transition-all flex gap-2 items-center"
-              href=""
+              href="/#achievement"
+              onClick={() => dispatch(toggleNavbar())}
             >
               <TrophyIcon className="w-4 h-4" />
               Achievement
             </a>
             <a
               className="dark:hover:text-[#a1a1a1] transition-all flex gap-2 items-center"
-              href=""
+              href="/#work"
+              onClick={() => dispatch(toggleNavbar())}
+            >
+              <BriefcaseIcon className="w-4 h-4" />
+              Work
+            </a>
+            <a
+              className="dark:hover:text-[#a1a1a1] transition-all flex gap-2 items-center"
+              href="/#contact"
+              onClick={() => dispatch(toggleNavbar())}
             >
               <EnvelopeIcon className="w-4 h-4" />
               Contact

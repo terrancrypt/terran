@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Achivement = () => {
   return (
-    <section className={`py-20 ${containerConfig}`}>
+    <section className={`py-32 ${containerConfig}`}>
       <Image
         src="/images/archievement.png"
         alt=""
@@ -11,8 +11,8 @@ const Achivement = () => {
         width={1500}
         className="border rounded"
       />
-      <div className="pt-10 lg:pt-20 pb-5 lg:pb-10">
-        <h2 className="font-semibold text-xl md:text-3xl lg:text-[56px] text-black dark:text-white mb-6">
+      <div className="pt-10 lg:pt-20 pb-5 lg:pb-10" id="achievement">
+        <h2 className="font-medium text-2xl md:text-3xl lg:text-[56px] text-black dark:text-white mb-6">
           Archievement
         </h2>
         <span className="font-semibold text-base md:text-lg">
@@ -21,12 +21,13 @@ const Achivement = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between text-sm md:text-base lg:text-lg gap-5 lg:gap-20">
         <p className="flex-1">
-          The most recent accomplishment in the Blockchain industry that I'm
-          particularly proud of is my victory in the Web3Hackfest competition.
-          As someone relatively new to the programming field, I consider this
-          achievement to be quite meaningful. Prior to this, I've had the
-          opportunity to engage with the blockchain industry as a researcher and
-          have been invested in the cryptocurrency market since 2018.
+          The most recent accomplishment in the Blockchain industry that
+          I&apos;m particularly proud of is my victory in the Web3Hackfest
+          competition. As someone relatively new to the programming field, I
+          consider this achievement to be quite meaningful. Prior to this,
+          I&apos;ve had the opportunity to engage with the blockchain industry
+          as a researcher and have been invested in the cryptocurrency market
+          since 2018.
         </p>
         <div className="flex-1">
           <p>

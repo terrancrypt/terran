@@ -22,7 +22,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="fixed top-0 left-0 w-full xl:px-0 lg:px-2 md:px-4 px-6 bg-white dark:bg-[#1c1c1c]">
+    <div className="fixed top-0 left-0 w-full xl:px-0 lg:px-2 md:px-4 px-6 bg-white dark:bg-[#1c1c1c] z-50">
       <div
         className={`py-[25px] flex justify-between items-center ${mainFont.className} tracking-wider container mx-auto`}
       >
@@ -30,40 +30,33 @@ const Header = () => {
           <EllipsisVerticalIcon className="w-8 h-8 " />
         </button>
         <Link href="/">
-          {/* <Image
-            src={theme === "light" ? logoLight : logoDark}
-            alt="terran crypt logo"
-            width={150}
-            height={50}
-            priority
-          /> */}
           <span>TerranCrypt</span>
         </Link>
         <nav className="space-x-8 uppercase text-[13px] font-semibold hidden md:flex">
           <a
             className="dark:hover:text-[#a1a1a1] transition-all flex gap-1 items-center"
-            href=""
+            href="/#about"
           >
             <UserIcon className="w-4 h-4" />
             About
           </a>
           <a
             className="dark:hover:text-[#a1a1a1] transition-all flex gap-1 items-center"
-            href=""
-          >
-            <BriefcaseIcon className="w-4 h-4" />
-            Work
-          </a>
-          <a
-            className="dark:hover:text-[#a1a1a1] transition-all flex gap-1 items-center"
-            href=""
+            href="/#achievement"
           >
             <TrophyIcon className="w-4 h-4" />
             Achievement
           </a>
           <a
             className="dark:hover:text-[#a1a1a1] transition-all flex gap-1 items-center"
-            href=""
+            href="/#work"
+          >
+            <BriefcaseIcon className="w-4 h-4" />
+            Work
+          </a>
+          <a
+            className="dark:hover:text-[#a1a1a1] transition-all flex gap-1 items-center"
+            href="/#contact"
           >
             <EnvelopeIcon className="w-4 h-4" />
             Contact

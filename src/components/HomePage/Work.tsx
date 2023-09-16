@@ -36,31 +36,30 @@ const workData: WorkData[] = [
     demoUrl: "https://bc-40-fiverr-clone.vercel.app/",
     gitUrl: "https://github.com/terrancrypt/fiverr_clone_project",
     imgSrc: "/images/fiverr-clone-screenshot.png",
-    desc: "This project is the first time I lead a small team. I am the one who divides the work, manages time, checks work and builds the project's Homepage. However, the data returned from the back-end of the project has been discontinued, because I no longer have enough time to build it.",
+    desc: "This project is the first time I lead a small team. I am the one who divides the work, manages time, checks work and builds the project's Homepage, Header, Footer. However, the data returned from the back-end of the project has been discontinued, because I no longer have enough time to build it.",
     tag: "Front-end",
   },
 ];
 
 const Work = () => {
   return (
-    <div className="py-20 bg-[#f8f8f8] dark:bg-[#141414]">
+    <section className="py-32 bg-[#f8f8f8] dark:bg-[#141414]" id="work">
       <div className={`${containerConfig}`}>
         <p className="text-sm font-semibold mb-6">WORK</p>
-        <h2 className="font-semibold text-xl md:text-3xl lg:text-[56px] text-black dark:text-white mb-6">
+        <h2 className="font-medium text-2xl md:text-3xl lg:text-[56px] text-black dark:text-white mb-6">
           My most recent projects
         </h2>
         <hr className="my-16" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
           {workData.map((item, index) => (
             <div className="space-y-4 w-full" key={index}>
-              <div className="w-full h-[300px] relative border">
-                <a href="">
-                  {" "}
+              <div className="w-full h-[300px] relative border overflow-hidden">
+                <a href={item.demoUrl} target="_blank">
                   <Image
                     src={item.imgSrc}
                     alt={item.name}
                     fill
-                    className="object-cover"
+                    className="object-cover hover:scale-110 transition-all"
                   />
                 </a>
               </div>
@@ -78,13 +77,17 @@ const Work = () => {
                 </a>
               </div>
 
-              <h3 className="text-2xl font-semibold">{item.name}</h3>
+              <h3 className="text-2xl font-semibold hover:underline transtion-all">
+                <a href={item.gitUrl} target="_blank">
+                  {item.name}
+                </a>
+              </h3>
               <p>{item.desc}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
