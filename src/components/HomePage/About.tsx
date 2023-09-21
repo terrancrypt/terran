@@ -88,25 +88,22 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-[#141414] py-6 lg:py-0" id="about">
+    <section className="bg-[#141414]" id="about">
       <div className={`${containerConfig}`}>
-        <div className="h-[25vh] flex items-center justify-beetween">
-          <div className="space-y-3 lg:space-y-0 lg:flex items-center justify-between w-full">
-            <h1 className="font-semibold text-xl md:text-3xl lg:text-4xl text-white">
+        <div className="flex items-center justify-beetween pt-10 lg:pt-20">
+          <div className="space-y-3 lg:space-y-0 lg:flex items-center justify-between w-full lg:pb-20">
+            <h1 className="font-semibold text-lg md:text-xl lg:text-2xl text-white ">
               I&apos;m a <span id="typeText">Full Stack Web3 Developer.</span>
             </h1>
-            {/* <button className="bg-white p-4 rounded-3xl font-medium hover:scale-90 transition-all">
-            See my work
-          </button> */}
-            <p className="text-white w-full lg:w-[600px] text-base md:text-lg lg:text-xl ">
+            <p className="text-white w-full lg:w-[600px] text-sm md:text-base lg:text-lg pb-10 lg:pb-0">
               I&apos;m a versatile programmer with front-end, back-end, and
               smart contract development skills. I have a passion for Web3 and
               Blockchain development.
             </p>
           </div>
         </div>
-        <hr className="py-10" />
-        <div className="grid grid-cols-2 md:grid-cols-4 text-white pb-20 gap-14">
+        <hr />
+        <div className="grid grid-cols-2 md:grid-cols-4 text-white py-20 gap-14">
           {dataSkills.map((item, index) => (
             <div key={index} className="flex justify-center">
               <div className="text-center flex flex-col items-center">
