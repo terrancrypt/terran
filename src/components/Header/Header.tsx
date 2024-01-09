@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 w-full bg-white dark:bg-[#1c1c1c] z-50">
       <div
-        className={`py-[25px] flex justify-between items-center ${mainFont.className} tracking-wider container mx-auto px-4`}
+        className={`py-[25px] flex justify-between items-center ${mainFont.className} tracking-wider container mx-auto px-8`}
       >
         <button onClick={() => dispatch(toggleNavbar())} className="md:hidden">
           <EllipsisVerticalIcon className="w-8 h-8 " />

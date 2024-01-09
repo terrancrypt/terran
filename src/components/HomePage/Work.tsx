@@ -14,6 +14,22 @@ interface WorkData {
 
 const workData: WorkData[] = [
   {
+    name: "Ether Echelon Game",
+    demoUrl: "https://devpost.com/software/ether-echelon-game",
+    gitUrl: "https://github.com/terrancrypt/constellation-hackathon",
+    imgSrc: "/images/ether-echelon-screenshot.jpeg",
+    desc: `This project is making a game on the Blockchain platform. Players will not use a wallet to log in but will use an ERC-721 NFT called Account NFT, based on the ERC6551 standard. The advantage of this standard is that the Account NFT will be able to contain all in-game items, which are other NFTs or ERC-20s.`,
+    tag: "FULL-STACK WEB3 / DEFI",
+  },
+  {
+    name: "Transfund",
+    demoUrl: "https://ethglobal.com/showcase/trans-fund-f0e2e",
+    gitUrl: "https://github.com/terrancrypt/transfund",
+    imgSrc: "/images/Screenshot-transfund.png",
+    desc: `This is a personal project, aimed at participating in ETH Global's ETHOnline hackathon. This project allows people to create funds and invite others to participate in their funds.`,
+    tag: "FULL-STACK WEB3 / DEFI",
+  },
+  {
     name: "TC Protocol",
     demoUrl: "https://tcprotocol.vercel.app/",
     gitUrl: "https://github.com/terrancrypt/tcprotocol",
@@ -21,7 +37,7 @@ const workData: WorkData[] = [
     desc: `This project was the winner of my Web3 Hackfest competition. The
   project has been upgraded for use on 3 different chains but also
   uses the same EVM system. The interface part uses the ReactJs, the contract part uses the Foundry framework.`,
-    tag: "FULL-STACK WEB3",
+    tag: "FULL-STACK WEB3 / DEFI",
   },
   {
     name: "AirBnb Api",
@@ -29,7 +45,7 @@ const workData: WorkData[] = [
     gitUrl: "https://github.com/terrancrypt/airbnb/tree/master/back_end",
     imgSrc: "/images/airbnb-api-screenshot.png",
     desc: "This project uses NestJs (NodeJs framework) to create APIs. In this project I used a lot of different technologies and tools. The part I like most is the Authentication feature of this application, using a combination of cookies, accesstoken & refreshtoken, storing cookies with Redis.",
-    tag: "Back-End",
+    tag: "Back-end",
   },
   {
     name: "Fiverr Clone",

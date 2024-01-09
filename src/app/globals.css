@@ -21,3 +21,8 @@ textarea {
     border-bottom: 1px solid #49494b;
     outline: none;
 }
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
