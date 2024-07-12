@@ -1,5 +1,5 @@
 ---
-title: "10 Tips to Solve Any Programming Error (Including with AI Assistance)"
+title: "10 Tips to Solve Any Programming Error"
 publishedAt: 2024-07-12
 description: "As a programmer, you've undoubtedly faced perplexing and sometimes frustrating errors. However, with the right techniques and a bit of patience, you can overcome any challenge. Let's explore the top 10 tips for solving any programming error, including how to leverage the power of AI."
 isPublish: true
@@ -38,7 +38,6 @@ By placing the `debugger` keyword, you can pause execution at that line and insp
 Using log statements can help you track the execution flow of your program and the values of variables at different points.
 
 ```python
-
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
@@ -59,7 +58,6 @@ When faced with a complex error, try to break it down into smaller, more managea
 Writing unit tests not only helps you catch errors early but also helps isolate issues when they do occur.
 
 ```python
-
 import unittest
 
 def add(a, b):
@@ -89,7 +87,6 @@ Someone may have encountered a similar issue and shared a solution. However, rem
 Tools like Git can help you track changes and revert to a previous working version if necessary.
 
 ```bash
-
 git log # View commit history
 git diff # View changes
 git checkout <commit-hash> # Revert to a specific commit
