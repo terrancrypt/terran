@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Terran 👋",
   // profile: "/profile.webp",
   description:
-    "I'm a *Vietnamese Web3 Developer*. I am currently working at VBI Academy.",
+    "I'm a *Vietnamese Web3 Developer* passionate about building decentralized applications. I enjoy exploring the intersection of blockchain technology and web development to create innovative solutions.",
   socials: [
     {
       label: "Linkedin",
@@ -25,6 +25,10 @@ const presentation: Presentation = {
     {
       label: "Github",
       link: "https://github.com/terrancrypt",
+    },
+    {
+      label: "Youtube",
+      link: "https://www.youtube.com/@terrancrypt",
     },
   ],
 };
