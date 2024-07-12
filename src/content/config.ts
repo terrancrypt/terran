@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
 const postsCollection = defineCollection({
   type: "content",
@@ -12,3 +13,5 @@ const postsCollection = defineCollection({
 });
 
 export const collections = { posts: postsCollection };
+type Post = CollectionEntry<"posts">;
+export type PostFrontmatter = Post["data"];
