@@ -11,10 +11,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 import PostCard from "../components/PostCard.astro";
 import type { PostFrontmatter } from "../content/config";
 
-const posts = (await getCollection("posts")).sort(function (
-  first: PostFrontmatter,
-  second: PostFrontmatter
-) {
+const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
@@ -62,7 +59,7 @@ const posts = (await getCollection("posts")).sort(function (
           posts.length !== 0 &&
             posts
               .slice(0, 2)
-              .map((post: PostFrontmatter) => (
+              .map((post) => (
                 <PostCard
                   publishedAt={post.data.publishedAt}
                   title={post.data.title}
