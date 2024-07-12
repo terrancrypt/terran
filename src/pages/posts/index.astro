@@ -2,12 +2,8 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import formatDate from "../../utils/formatDate";
-import type { PostFrontmatter } from "../../content/config";
 
-const posts = (await getCollection("posts")).sort(function (
-  first: PostFrontmatter,
-  second: PostFrontmatter
-) {
+const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
@@ -18,7 +14,7 @@ const posts = (await getCollection("posts")).sort(function (
 
     <article class="flex flex-col gap-4">
       {
-        posts.map((post: PostFrontmatter) => (
+        posts.map((post) => (
           <a
             class="group flex flex-col gap-2 border-t border-neutral-700 py-4 transition-all hover:text-neutral-100"
             href={`/posts/${post.slug}`}

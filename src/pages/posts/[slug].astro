@@ -3,12 +3,11 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import formatDate from "../../utils/formatDate";
 import Layout from "../../layouts/Layout.astro";
-import type { PostFrontmatter } from "../../content/config";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
 
-  return posts.map((post: PostFrontmatter) => ({
+  return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
