@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Terran 👋",
   // profile: "/profile.webp",
   description:
-    "I'm a *vietnamese web3 developer*. I am currently working at VBI Academy.",
+    "I'm a *Vietnamese Web3 Developer*. I am currently working at VBI Academy.",
   socials: [
     {
       label: "Linkedin",
