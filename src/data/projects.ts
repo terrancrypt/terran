@@ -17,6 +17,11 @@ const projects: Project[] = [
     link: "https://www.youtube.com/@VBIAcademy",
   },
   {
+    title: "Web3Roadmap",
+    techs: ["Education", "Open-source", "Web3"],
+    link: "https://web3roadmap.com/",
+  },
+  {
     title: "TC Protocol",
     techs: ["Web3", "DeFi", "Solidity", "TypeScript"],
     link: "https://devfolio.co/projects/tc-protocol-e5f8",
