@@ -7,23 +7,23 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "OpenEdu101",
-    techs: ["Education", "Next.js", "TypeScript"],
-    link: "https://openedu101.com/",
+    title: "OpenEDU",
+    techs: ["Education Platform", "Blockchain Lead"],
+    link: "https://openedu.net/",
   },
   {
     title: "VBI Academy",
-    techs: ["Education", "Youtube"],
+    techs: ["Education Channel", "Training Specialist"],
     link: "https://www.youtube.com/@VBIAcademy",
   },
   {
     title: "Web3Roadmap",
-    techs: ["Education", "Open-source", "Web3"],
+    techs: ["Open-source"],
     link: "https://web3roadmap.com/",
   },
   {
     title: "TC Protocol",
-    techs: ["Web3", "DeFi", "Solidity", "TypeScript"],
+    techs: ["Web3", "Win Hackathon"],
     link: "https://devfolio.co/projects/tc-protocol-e5f8",
   },
 ];
