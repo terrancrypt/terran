@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "./satoshi.css";
+
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.black-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-color: #000;
+}
+
+.water-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    pointer-events: none;
+    background: radial-gradient(circle at 25% 40%,
+            rgba(0, 180, 255, 0.25) 0%,
+            rgba(0, 150, 255, 0.12) 25%,
+            transparent 50%),
+        radial-gradient(circle at 75% 60%,
+            rgba(150, 100, 255, 0.2) 0%,
+            rgba(100, 150, 255, 0.1) 20%,
+            transparent 45%),
+        radial-gradient(circle at 50% 25%,
+            rgba(0, 220, 180, 0.18) 0%,
+            rgba(50, 200, 150, 0.08) 30%,
+            transparent 45%),
+        radial-gradient(circle at 80% 30%,
+            rgba(255, 150, 200, 0.15) 0%,
+            rgba(200, 100, 150, 0.06) 25%,
+            transparent 40%);
+    animation: waterGlow 12s ease-in-out infinite;
+}
+
+.retro-background {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 128px;
+    background-repeat: repeat;
+    background-image: url(/background.png);
+    opacity: 0.075;
+    border-radius: 0px;
+}
+
+@keyframes waterGlow {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+        filter: hue-rotate(0deg) brightness(1.1);
+    }
+
+    25% {
+        opacity: 0.8;
+        transform: scale(1.03);
+        filter: hue-rotate(45deg) brightness(1.2);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.01);
+        filter: hue-rotate(-30deg) brightness(1.15);
+    }
+
+    75% {
+        opacity: 0.9;
+        transform: scale(1.04);
+        filter: hue-rotate(60deg) brightness(1.25);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+        filter: hue-rotate(0deg) brightness(1.1);
+    }
+}
+
+
+/* Light variants */
+.font-satoshi {
+    font-family: "Satoshi-Light", sans-serif;
+}
+
+.font-satoshi-light {
+    font-family: "Satoshi-Light", sans-serif;
+}
+
+.font-satoshi-light-italic {
+    font-family: "Satoshi-LightItalic", sans-serif;
+}
+
+/* Regular variants */
+.font-satoshi-regular {
+    font-family: "Satoshi-Regular", sans-serif;
+}
+
+.font-satoshi-italic {
+    font-family: "Satoshi-Italic", sans-serif;
+}
+
+/* Medium variants */
+.font-satoshi-medium {
+    font-family: "Satoshi-Medium", sans-serif;
+}
+
+.font-satoshi-medium-italic {
+    font-family: "Satoshi-MediumItalic", sans-serif;
+}
+
+/* Bold variants */
+.font-satoshi-bold {
+    font-family: "Satoshi-Bold", sans-serif;
+}
+
+.font-satoshi-bold-italic {
+    font-family: "Satoshi-BoldItalic", sans-serif;
+}
+
+/* Black variants */
+.font-satoshi-black {
+    font-family: "Satoshi-Black", sans-serif;
+}
+
+.font-satoshi-black-italic {
+    font-family: "Satoshi-BlackItalic", sans-serif;
+}
+
+/* Variable font variants */
+.font-satoshi-variable {
+    font-family: "Satoshi-Variable", sans-serif;
+}
+
+.font-satoshi-variable-italic {
+    font-family: "Satoshi-VariableItalic", sans-serif;
+}
+
+/* Variable font weight utilities */
+.font-satoshi-variable-300 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 300;
+}
+
+.font-satoshi-variable-400 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+.font-satoshi-variable-500 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 500;
+}
+
+.font-satoshi-variable-600 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 600;
+}
+
+.font-satoshi-variable-700 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 700;
+}
+
+.font-satoshi-variable-800 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 800;
+}
+
+.font-satoshi-variable-900 {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-variation-settings: 'wght' 900;
+}
