@@ -1,0 +1,364 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import NarrativeSection from "../components/NarrativeSection.astro";
+import EventSection from "../components/EventSection.astro";
+import { ArrowUpRight } from "@lucide/astro";
+
+const socials = [
+  {
+    icon: "youtube.svg",
+    url: "https://www.youtube.com/@terrancrypt",
+  },
+  {
+    icon: "x.svg",
+    url: "https://x.com/terrancrypt",
+  },
+  {
+    icon: "facebook.svg",
+    url: "https://www.facebook.com/terrancrypt",
+  },
+  {
+    icon: "telegram.svg",
+    url: "https://t.me/terrancrypt",
+  },
+  {
+    icon: "github.svg",
+    url: "https://github.com/terrancrypt",
+  },
+  {
+    icon: "linkedin.svg",
+    url: "https://www.linkedin.com/in/terrancrypt/",
+  },
+];
+
+const positions = [
+  {
+    name: "Developer Ambassador",
+    description:
+      "I serve as a developer ambassador for Sui, helping to build the Sui ecosystem and educate developers on how to use Sui.",
+    image: "Sui_Logo_White.png",
+    button: "SuiHub HCMC",
+    buttonLink: "https://sui.io.vn",
+    bgColor: "#030F1C",
+  },
+  {
+    name: "Training Specialist",
+    description:
+      "I mentor 500+ professionals on Web3 and blockchain, develop tailored educational content, and collaborate with major blockchain foundations like Ethereum and Cardano.",
+    image: "VBI_Logo_White.png",
+    button: "VBI Academy",
+    buttonLink: "https://vbiacademy.edu.vn",
+    bgColor: "hsl(244 93% 32%)",
+  },
+  {
+    name: "Founder",
+    description:
+      "I develop a wallet for Hyperliquid and multichain, including Sui.",
+    image: "Purro_Logo.png",
+    button: "Purro Wallet",
+    buttonLink: "https://purro.xyz",
+    bgColor: "#166260",
+  },
+];
+
+const experiences = [
+  {
+    title: "Developer Ambassador",
+    company: "Sui Foundation",
+    companyLink: "https://sui.io",
+    period: "Jul 2025 - Present",
+  },
+  {
+    title: "Training Specialist",
+    company: "VBI Academy",
+    companyLink: "https://vbiacademy.edu.vn",
+    period: "Feb 2024 - Present",
+  },
+  {
+    title: "Blockchain Lead",
+    company: "OpenEdu",
+    companyLink: "https://openedu.net",
+    period: "Sep 2024 - Jul 2025",
+  },
+];
+
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "Python",
+  "Solidity",
+  "Move",
+  "Rust",
+  "Web3",
+  "Blockchain",
+  "Smart Contracts",
+  "DeFi",
+  "NFTs",
+  "Sui",
+  "Ethereum",
+  "Cardano",
+  "UI/UX Design",
+  "Figma",
+  "Tailwind CSS",
+  "Git",
+  "Docker",
+  "AWS",
+  "MongoDB",
+  "PostgreSQL",
+  "GraphQL",
+  "REST APIs",
+  "Testing",
+  "Agile",
+  "+ More",
+];
+---
+
+<Layout>
+  <!-- <Header /> -->
+  <div class="container mx-auto pt-[120px] text-center px-2">
+    <div class="flex items-center justify-center flex-col py-24">
+      <img src="/terrannft.png" alt="logo" class="w-30 rounded-full" />
+      <p
+        class="text-3xl font-satoshi-bold mt-4"
+        style="background-image: linear-gradient(135deg, #ffffff 0%, #c7d2fe 20%, #ffffff 40%, #a5b4fc 60%, #e0e7ff 80%, #ffffff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;"
+      >
+        Where code meets community, magic happens.
+      </p>
+      <p class="text-base text-white/50 mt-2">
+        Web3 Developer | Blockchain Educator | Community Builder
+      </p>
+      <div class="flex items-center justify-center mt-4 z-10 gap-2">
+        {
+          socials.map((social) => (
+            <a
+              href={social.url}
+              target="_blank"
+              class="bg-white/80 border border-white/20 rounded-full p-2 hover:bg-white/90 transition-all duration-300 cursor-pointer"
+            >
+              <img src={`/${social.icon}`} alt={social.icon} class="w-6 h-6" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Stacking Cards Container -->
+    <div class="py-24 max-w-4xl mx-auto relative">
+      {
+        positions.map((position, index) => (
+          <div
+            class="stack-card sticky top-20 mb-2"
+            style={`z-index: ${index + 1}; --card-index: ${index};`}
+            data-card-index={index}
+          >
+            <div class="card-content w-full border border-white/10 rounded-4xl py-[40px] px-[30px] flex md:flex-row flex-col-reverse gap-2 bg-black backdrop-blur-sm">
+              <div class="flex flex-col justify-center gap-16 md:pr-8 md:w-1/2">
+                <div class="space-y-2 text-left">
+                  <h3 class="text-3xl">{position.name}</h3>
+                  <p class="text-white/80 text-lg font-satoshi-light">
+                    {position.description}
+                  </p>
+                </div>
+
+                <a
+                  href={position.buttonLink}
+                  target="_blank"
+                  class="border border-white/20 rounded-full px-4 py-2 w-fit z-10 cursor-pointer hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                >
+                  {position.button}
+                  <ArrowUpRight class="w-5 h-5" />
+                </a>
+              </div>
+              <div
+                class="md:w-1/2 aspect-video rounded-xl flex items-center justify-center"
+                style={`background-color: ${position.bgColor};`}
+              >
+                <img
+                  src={`/${position.image}`}
+                  alt={position.name}
+                  class="h-14"
+                />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+      <!-- Add spacing at the bottom for scroll continuation -->
+      <div class="h-32"></div>
+    </div>
+
+    <!-- Narrative Section -->
+    <NarrativeSection />
+
+    <!-- Skills Section -->
+    <div class="py-24 max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl mb-12 text-left text-white/80">Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        {
+          skills.map((skill) => (
+            <span class="bg-black/10 border border-white/20 rounded-lg px-4 py-2 text-sm font-satoshi-medium">
+              {skill}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="py-24 max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl mb-12 text-left text-white/80">Experience</h2>
+      {
+        experiences.map((exp) => (
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-6 border-b border-white/10 last:border-b-0">
+            <div class="flex-1 mb-4 md:mb-0">
+              <h3 class="text-2xl text-white/80 mb-2 text-left">{exp.title}</h3>
+            </div>
+            <div class="text-left md:text-right w-fit flex flex-col md:items-end">
+              <a
+                class="text-white/70 text-lg flex items-center hover:text-white/90 transition-all duration-300 w-fit"
+                href={exp.companyLink}
+                target="_blank"
+              >
+                {exp.company}
+                <ArrowUpRight class="w-5 h-5" />
+              </a>
+              <p class="text-white/60 font-satoshi-light">{exp.period}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Event Section -->
+    <!-- <EventSection /> -->
+  </div>
+  <Footer />
+</Layout>
+
+<style>
+  .stack-card {
+    transition:
+      transform 0.3s ease-out,
+      opacity 0.3s ease-out;
+  }
+
+  .card-content {
+    transition: all 0.3s ease-out;
+  }
+
+  /* Stacking effect styles */
+  .stack-card.stacked {
+    transform: scale(0.95) translateY(-10px);
+    opacity: 0.8;
+  }
+
+  .stack-card.stacked:nth-child(2) {
+    transform: scale(0.9) translateY(-20px);
+    opacity: 0.6;
+  }
+
+  .stack-card.stacked:nth-child(3) {
+    transform: scale(0.85) translateY(-30px);
+    opacity: 0.4;
+  }
+</style>
+
+<script>
+  function initStackingCards() {
+    const cards = document.querySelectorAll(".stack-card");
+
+    function updateCardStacking() {
+      const windowHeight = window.innerHeight;
+      const stackingContainer = document.querySelector(
+        ".mt-20.max-w-4xl.mx-auto.relative"
+      );
+      const stackingContainerRect = stackingContainer?.getBoundingClientRect();
+
+      // Check if we should release all cards (when scrolled past the container)
+      const shouldReleaseAll =
+        stackingContainerRect &&
+        stackingContainerRect.bottom <= windowHeight * 0.6;
+
+      cards.forEach((card, index) => {
+        const cardElement = card as HTMLElement;
+
+        if (shouldReleaseAll) {
+          // Release all cards - hide previous cards and show only content below
+          if (index < cards.length - 1) {
+            // Hide all cards except the last one
+            cardElement.style.opacity = "0";
+            cardElement.style.transform = "scale(0.8) translateY(-50px)";
+            cardElement.style.pointerEvents = "none";
+          } else {
+            // Last card - allow it to scroll away naturally
+            cardElement.style.position = "relative";
+            cardElement.style.transform = "scale(1) translateY(0px)";
+            cardElement.style.opacity = "1";
+            cardElement.style.pointerEvents = "auto";
+          }
+          return;
+        }
+
+        // Normal stacking logic when not released
+        const nextCard = cards[index + 1] as HTMLElement;
+
+        if (nextCard) {
+          const nextRect = nextCard.getBoundingClientRect();
+          const distanceToNext = nextRect.top - 80;
+
+          // If the next card is approaching, start stacking effect on current card
+          if (distanceToNext <= 150 && distanceToNext > 0) {
+            const progress = Math.max(
+              0,
+              Math.min(1, (150 - distanceToNext) / 150)
+            );
+            const scale = 1 - progress * 0.03;
+            const opacity = 1 - progress * 0.2;
+            const translateY = -(progress * 15);
+
+            cardElement.style.position = "sticky";
+            cardElement.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+            cardElement.style.opacity = opacity.toString();
+            cardElement.style.pointerEvents = "auto";
+          } else {
+            // Show peek effect - slightly smaller and offset
+            const peekOffset = index * 8; // Each previous card shows 8px below
+            cardElement.style.position = "sticky";
+            cardElement.style.transform = `scale(0.98) translateY(${peekOffset}px)`;
+            cardElement.style.opacity = "0.9";
+            cardElement.style.pointerEvents = "auto";
+          }
+        } else {
+          // Last card - full size, no peek effect
+          cardElement.style.position = "sticky";
+          cardElement.style.transform = "scale(1) translateY(0px)";
+          cardElement.style.opacity = "1";
+          cardElement.style.pointerEvents = "auto";
+        }
+      });
+    }
+
+    // Throttle scroll events for better performance
+    let ticking = false;
+    function handleScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateCardStacking();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    updateCardStacking(); // Initial call
+  }
+
+  // Initialize when DOM is loaded
+  document.addEventListener("DOMContentLoaded", initStackingCards);
+</script>

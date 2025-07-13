@@ -1,0 +1,39 @@
+---
+const links = [
+  {
+    label: "Courses",
+    href: "/courses",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+  {
+    label: "Login",
+    href: "/login",
+  },
+];
+---
+
+<header class="z-20 flex item-center justify-center mt-4 fixed w-full">
+  <div
+    class={`bg-white/80 border border-white/20 rounded-full grid grid-cols-4 text-center overflow-hidden`}
+  >
+    {
+      links.map((link, index) => (
+        <a
+          href={link.href}
+          class={`text-black text-sm px-4 py-4 flex items-center justify-center hover:bg-white/20 transition-all duration-300 cursor-pointer ${
+            index === 0 ? "pl-6" : ""
+          } ${index === links.length - 1 ? "pr-6" : ""}`}
+        >
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+</header>

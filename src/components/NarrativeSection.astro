@@ -1,0 +1,102 @@
+---
+import { Sparkle } from "@lucide/astro";
+
+const narratives = [
+  {
+    tag: "Course",
+    title: "Web3 Development with Solidity",
+    link: "https://vbiacademy.edu.vn/en/courses/web3-development-with-solidity",
+    image: "web3_course.png",
+    size: "md:col-span-2",
+  },
+  {
+    tag: "Podcast",
+    title: "#DevChainTalk",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL-dA_e2Zk2ZM-_03J8zZk87U1apm2-vC&index=1",
+    image: "podcast_1.png",
+    size: "md:col-span-1",
+  },
+];
+
+// Building, Sharing, Teaching, Supporting
+---
+
+<div class="py-24 max-w-4xl mx-auto px-4 md:px-0">
+  <h2 class="text-4xl mb-12 text-left text-white/80">"Follow My Narrative"</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+    <div
+      class="col-span-1 rounded-4xl p-6 bg-black/40 flex flex-col justify-between"
+    >
+      <img
+        src="/teaching.png"
+        alt="teaching"
+        class="h-full object-cover object-left rounded-xl mb-4"
+      />
+      <div>
+        <div class="flex items-center gap-2 mb-2 text-white/80">
+          <Sparkle class="size-5" />
+          <p class="font-satoshi-medium text-xl">Teaching</p>
+        </div>
+        <p class="font-satoshi-regular text-base text-white/70">
+          Web3 courses and blockchain education.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-2 rounded-4xl bg-black/40 relative flex flex-col items-end justify-end overflow-hidden aspect-video"
+    >
+      <video
+        src="/sharing.mp4"
+        class="aspect-video object-cover rounded-xl mb-4 absolute top-0 left-0 w-full h-full z-0"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+      <div class="p-6 bg-gradient-to-t from-black to-black/0 z-20 w-full">
+        <div class="flex items-center gap-2 mb-2 text-white/80">
+          <Sparkle class="size-5" />
+          <p class="font-satoshi-medium text-xl">Sharing</p>
+        </div>
+        <p class="font-satoshi-regular text-base text-white/70">
+          Blockchain podcasts and community talks
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-2 rounded-4xl bg-black/40 relative flex flex-col items-end justify-start overflow-hidden aspect-video"
+    >
+      <img
+        src="/workshop.jpg"
+        alt="workshop"
+        class="aspect-video object-cover rounded-xl mb-4 absolute top-0 left-0 w-full h-full z-0"
+      />
+      <div class="p-6 bg-gradient-to-b from-black to-black/0 z-20 w-full">
+        <div class="flex items-center gap-2 mb-2 text-white/80">
+          <Sparkle class="size-5" />
+          <p class="font-satoshi-medium text-xl">Workshop</p>
+        </div>
+        <p class="font-satoshi-regular text-base text-white/70">
+          Hands-on Web3 development training.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-1 rounded-4xl p-6 bg-black/40 flex flex-col justify-between"
+    >
+      <img
+        src="/building.png"
+        alt="building"
+        class="h-full object-cover rounded-xl mb-4"
+      />
+      <div>
+        <div class="flex items-center gap-2 mb-2 text-white/80">
+          <Sparkle class="size-5" />
+          <p class="font-satoshi-medium text-xl">Building</p>
+        </div>
+        <p class="font-satoshi-regular text-base text-white/70">
+          DApps and smart contract solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
